@@ -54,3 +54,5 @@ switch (GET_OPCODE(inst)) { // usual luau case switch
 		MyConvertedCode.push_back(rinst); // add our encrypted instruction to the vector, ready to be added to p->code
 	break; }
 }
+
+*/
