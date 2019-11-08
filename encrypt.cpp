@@ -41,3 +41,16 @@ int encryptABC(Instruction OP) {
   enc = cubicFormula(Op, A, B, C);
   return enc;
 }
+
+
+/*
+
+USAGE EXAMPLE
+
+switch (GET_OPCODE(inst)) { // usual luau case switch
+	case OP_RETURN: {
+		Instruction raw = generateABC(GETARG_A(inst), GETARG_B(inst), GETARG_C(inst)); // generate our luau-formatted ABC instruction
+		rinst = encryptABC(raw); // encrypt our raw luau opcode so it can be decrypted
+		MyConvertedCode.push_back(rinst); // add our encrypted instruction to the vector, ready to be added to p->code
+	break; }
+}
